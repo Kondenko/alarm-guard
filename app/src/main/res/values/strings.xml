@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">AlarmGuard</string>
+
+    <!--Menu Items-->
+
+    <string name="action_enable">Enable</string>
+
+    <!--Notifications-->
+    <string name="notif_title_volume_off">Your alarm volume is low</string>
+    <string name="notif_action_increase_volume">Increase</string>
+
+    <!--Settings-->
+    <string name="pref_title_min_volume">Default alarm volume</string>
+
+</resources>

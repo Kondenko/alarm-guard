@@ -1,0 +1,21 @@
+*.apk
+*.ap_
+*.dex
+*.class
+bin/
+gen/
+out/
+.gradle/
+build/
+local.properties
+proguard/
+# Log Files
+*.log
+.navigation/
+captures/
+*.iml
+.idea/workspace.xml
+.idea/libraries
+# Keystore files
+*.jks
+gen-external-apklib
