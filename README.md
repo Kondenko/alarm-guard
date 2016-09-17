@@ -1,7 +1,7 @@
 AlarmGuard is a simple Android app written in Kotlin. 
 
-It makes sure your phone's alarm volume is not too low. Because if it is, you will most likely oversleep something tomorrow. 
-AlarmGuard doesn't want you to get fired, so install it and wake up right in time every day.
+It makes sure your phone's alarm volume is not too low. Because if it is, you will most likely oversleep tomorrow. 
+AlarmGuard doesn't want you to, so install it and wake up right in time every day.
 
 Status: in development. 
 
@@ -10,6 +10,7 @@ This app includes:
 - Service
 - BroadcastReveiver
 - ContentObserver
+
 so if you need an example of using these things in Kotlin, you can find it here.
 
 Disclaimer:
