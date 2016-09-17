@@ -12,6 +12,6 @@ This app includes:
 - ContentObserver
 so if you need an example of using these things in Kotlin, you can find it here.
 
-Disclaimed:
+Disclaimer:
 I'm sure this is not the best example of Kotlin code. Actually this is my first ever Android app written in something other than Java.
 If there's something wrong about my code (and the app), please tell me. Thanks in advance.
