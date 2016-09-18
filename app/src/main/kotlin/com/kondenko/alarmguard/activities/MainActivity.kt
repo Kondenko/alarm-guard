@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity(), PreferenceFragmentCompat.OnPreferenceS
 
     override fun onPreferenceStartScreen(preferenceFragmentCompat: PreferenceFragmentCompat?, preferenceScreen: PreferenceScreen?): Boolean {
         preferenceFragmentCompat?.preferenceScreen = preferenceScreen
-        return true;
+        return true
     }
 
     lateinit var service: Intent

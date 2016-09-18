@@ -19,7 +19,6 @@ class MinVolumeSeekbarPreference(context: Context, attrs: AttributeSet) : Prefer
         layoutResource = R.layout.pref_min_volume
     }
 
-
     override fun onBindViewHolder(holder: PreferenceViewHolder?) {
         super.onBindViewHolder(holder)
         val seekbar = holder?.findViewById(R.id.seekBarMinVolume) as SeekBar
