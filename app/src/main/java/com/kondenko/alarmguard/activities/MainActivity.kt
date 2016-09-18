@@ -35,7 +35,6 @@ class MainActivity : AppCompatActivity(), PreferenceFragmentCompat.OnPreferenceS
         service = Intent(this, VolumeCheckerService::class.java)
         enableApp(Preferences.appEnabled)
         supportFragmentManager.beginTransaction().replace(R.id.container, PrefFragment()).commit()
-//        i("Enabled = ${Preferences.appEnabled} \n Volume = ${Preferences.prefMinVolume}")
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
@@ -53,7 +52,6 @@ class MainActivity : AppCompatActivity(), PreferenceFragmentCompat.OnPreferenceS
 
     private fun enableApp(enable: Boolean) {
         Preferences.appEnabled = enable
-        i("starting service - $enable")
         if (enable) {
             startService(service)
         } else {

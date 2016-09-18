@@ -26,12 +26,9 @@ class VolumeObserver(val context: Context, handler: Handler?) : ContentObserver(
         super.onChange(selfChange)
         val audioManager = context.getSystemService(Context.AUDIO_SERVICE) as AudioManager
         val volume = audioManager.getStreamVolume(AudioManager.STREAM_ALARM)
-        i("Volume = $volume")
         if (volume < com.kondenko.alarmguard.preferences.Preferences.prefMinVolume) {
-            i("Low volume")
             sendNotificationLowVolume()
         } else {
-            i("Normal volume")
             NotificationManagerCompat.from(context).cancel(Constants.NOTIF_LOW_VOLUME_ID)
         }
     }
