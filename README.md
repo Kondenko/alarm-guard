@@ -1,4 +1,9 @@
 
+<<<<<<< HEAD
+=======
+It makes sure your phone's alarm volume is not too low. Because if it is, you will most likely oversleep tomorrow. 
+AlarmGuard doesn't want you to, so install it and wake up right in time every day.
+>>>>>>> origin/icon-fix
 
 ##AlarmGuard 
 
