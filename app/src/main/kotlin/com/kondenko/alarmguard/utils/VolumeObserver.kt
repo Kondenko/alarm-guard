@@ -1,6 +1,6 @@
 package com.kondenko.alarmguard.utils
 
-import android.app.IntentService
+import android.app.Activity
 import android.app.Notification
 import android.app.PendingIntent
 import android.content.Context
@@ -10,12 +10,10 @@ import android.media.AudioManager
 import android.os.Handler
 import android.support.v4.app.NotificationCompat
 import android.support.v4.app.NotificationManagerCompat
+import android.widget.Toast
 import com.kondenko.alarmguard.Constants
 import com.kondenko.alarmguard.R
-import com.kondenko.alarmguard.activities.MainActivity
 import com.kondenko.alarmguard.preferences.Preferences
-import com.pawegio.kandroid.audioManager
-import com.pawegio.kandroid.i
 
 /**
  * Sends a notification whenever alarm volume changes.
@@ -26,8 +24,12 @@ class VolumeObserver(val context: Context, handler: Handler?) : ContentObserver(
         super.onChange(selfChange)
         val audioManager = context.getSystemService(Context.AUDIO_SERVICE) as AudioManager
         val volume = audioManager.getStreamVolume(AudioManager.STREAM_ALARM)
-        if (volume < com.kondenko.alarmguard.preferences.Preferences.prefMinVolume) {
-            sendNotificationLowVolume()
+        if (volume < com.kondenko.alarmguard.preferences.Preferences.defaultVolume) {
+            if (Preferences.increaseAutomatically) {
+                VolumeManager.increaseVolume(context, Preferences.defaultVolume)
+            } else {
+                sendNotificationLowVolume()
+            }
         } else {
             NotificationManagerCompat.from(context).cancel(Constants.NOTIF_LOW_VOLUME_ID)
         }
@@ -62,6 +64,5 @@ class VolumeObserver(val context: Context, handler: Handler?) : ContentObserver(
 
         NotificationManagerCompat.from(context).notify(Constants.NOTIF_LOW_VOLUME_ID, notification)
     }
-
 
 }

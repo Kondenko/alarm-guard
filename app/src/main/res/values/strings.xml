@@ -9,7 +9,12 @@
     <string name="notif_title_volume_off">Your alarm volume is low</string>
     <string name="notif_action_increase_volume">Increase</string>
 
+    <string name="toast_volume_increased">Alarm volume increased</string>
+
     <!--Settings-->
     <string name="pref_title_min_volume">Default alarm volume</string>
+    <string name="pref_title_force_increase">Increase volume</string>
+    <string name="pref_summary_force_increase_on">Volume increased automatically</string>
+    <string name="pref_summary_force_increase_off">You\'ll get a notification</string>
 
 </resources>

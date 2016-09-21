@@ -5,11 +5,11 @@
 
     <com.kondenko.alarmguard.preferences.MinVolumeSeekbarPreference/>
 
-    <CheckBoxPreference
+    <SwitchPreferenceCompat
         android:id="@+id/switchPrefForceIncrease"
+        android:title="@string/pref_title_force_increase"
         android:summaryOff="@string/pref_summary_force_increase_off"
         android:summaryOn="@string/pref_summary_force_increase_on"
-        android:title="@string/pref_title_force_increase"
         />
 
 </PreferenceScreen>

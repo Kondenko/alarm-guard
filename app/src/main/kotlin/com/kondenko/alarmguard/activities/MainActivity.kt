@@ -1,24 +1,16 @@
 package com.kondenko.alarmguard.activities
 
-import android.content.BroadcastReceiver
-import android.content.Context
 import android.content.Intent
-import android.content.IntentFilter
-import android.media.AudioManager
 import android.os.Bundle
-import android.support.v4.app.NotificationManagerCompat
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.preference.PreferenceFragmentCompat
 import android.support.v7.preference.PreferenceScreen
 import android.support.v7.widget.SwitchCompat
 import android.view.Menu
-import com.kondenko.alarmguard.Constants
 import com.kondenko.alarmguard.R
 import com.kondenko.alarmguard.preferences.PrefFragment
 import com.kondenko.alarmguard.preferences.Preferences
 import com.kondenko.alarmguard.utils.VolumeCheckerService
-import com.pawegio.kandroid.audioManager
-import com.pawegio.kandroid.i
 
 class MainActivity : AppCompatActivity(), PreferenceFragmentCompat.OnPreferenceStartScreenCallback {
 

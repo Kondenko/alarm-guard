@@ -15,9 +15,9 @@ class NotificationActionReceiver : BroadcastReceiver() {
     override fun onReceive(context: Context?, intent: Intent?) {
         // This is called if the user increases the alarm volume through the notification action
         if (intent?.action.equals(Constants.ACTION_INCREASE_VOLUME)) {
-            context?.audioManager?.setStreamVolume(AudioManager.STREAM_ALARM, Preferences.prefMinVolume, 0)
-            NotificationManagerCompat.from(context).cancel(Constants.NOTIF_LOW_VOLUME_ID)
+           VolumeManager.increaseVolume(context, Preferences.defaultVolume)
         }
     }
+
 
 }

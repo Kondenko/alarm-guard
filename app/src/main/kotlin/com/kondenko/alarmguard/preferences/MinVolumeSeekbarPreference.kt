@@ -23,8 +23,8 @@ class MinVolumeSeekbarPreference(context: Context, attrs: AttributeSet) : Prefer
         super.onBindViewHolder(holder)
         val seekbar = holder?.findViewById(R.id.seekBarMinVolume) as SeekBar
         seekbar.max = context.audioManager?.getStreamMaxVolume(AudioManager.STREAM_ALARM) ?: Constants.DEFAULT_ALARM_VOLUME_MAX
-        seekbar.progress = Preferences.prefMinVolume
-        seekbar.onProgressChanged { value, fromUser -> Preferences.prefMinVolume = value }
+        seekbar.progress = Preferences.defaultVolume
+        seekbar.onProgressChanged { value, fromUser -> Preferences.defaultVolume = value }
     }
 
     override fun onGetDefaultValue(a: TypedArray, index: Int): Any {
