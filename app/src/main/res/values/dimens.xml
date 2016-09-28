@@ -5,4 +5,8 @@
 
     <dimen name="list_item_size">72dp</dimen>
 
+    <dimen name="card_welcome_height">136dp</dimen>
+    <dimen name="card_padding_outer">8dp</dimen>
+    <dimen name="card_padding_inner">16dp</dimen>
+
 </resources>

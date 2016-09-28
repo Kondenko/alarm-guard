@@ -2,7 +2,6 @@
     <string name="app_name">AlarmGuard</string>
 
     <!--Menu Items-->
-
     <string name="action_enable">Enable</string>
 
     <!--Notifications-->
@@ -16,5 +15,14 @@
     <string name="pref_title_force_increase">Increase volume</string>
     <string name="pref_summary_force_increase_on">Volume increased automatically</string>
     <string name="pref_summary_force_increase_off">You\'ll get a notification</string>
+
+    <!--Welcome card-->
+    <string name="card_welcome_title">Welcome!</string>
+    <string name="card_welcome_text">Just set the default volume so you can hear it clearly.</string>
+    <string name="card_welcome_action_dismiss">OK</string>
+
+
+    <!--Preferences keys-->
+    <string name="pref_key_increase_volume">increaseAutomatically</string>
 
 </resources>

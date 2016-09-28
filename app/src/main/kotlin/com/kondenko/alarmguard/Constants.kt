@@ -12,4 +12,5 @@ object Constants {
     val ACTION_INCREASE_VOLUME = "com.kondenko.alarmguard.ACTION_INCREASE_VOLUME"
 
     val NOTIF_LOW_VOLUME_ID = 1
+
 }
