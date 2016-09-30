@@ -33,7 +33,7 @@ class MainActivity : AppCompatActivity(), PreferenceFragmentCompat.OnPreferenceS
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.menu_toolbar, menu)
         val item = menu?.findItem(R.id.action_switch_enable)
-        item?.setActionView(R.layout.layout_switch)
+        item?.setActionView(R.layout.layout_pref_switch)
         val switch = item?.actionView as SwitchCompat
         switch.isChecked = Preferences.appEnabled
         switch.setOnCheckedChangeListener({

@@ -9,6 +9,7 @@
     <SwitchPreferenceCompat
         android:id="@+id/switchPrefForceIncrease"
         android:key="@string/pref_key_increase_volume"
+        android:layout="@layout/layout_pref_increase_volume"
         android:summaryOff="@string/pref_summary_force_increase_off"
         android:summaryOn="@string/pref_summary_force_increase_on"
         android:title="@string/pref_title_force_increase"

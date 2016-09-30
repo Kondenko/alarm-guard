@@ -16,7 +16,7 @@ import com.pawegio.kandroid.onProgressChanged
 class MinVolumeSeekbarPreference(context: Context, attrs: AttributeSet) : Preference(context, attrs) {
 
     init {
-        layoutResource = R.layout.pref_min_volume
+        layoutResource = R.layout.layout_pref_min_volume
     }
 
     override fun onBindViewHolder(holder: PreferenceViewHolder?) {
