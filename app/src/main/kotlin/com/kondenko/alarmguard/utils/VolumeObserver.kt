@@ -14,6 +14,7 @@ import android.widget.Toast
 import com.kondenko.alarmguard.Constants
 import com.kondenko.alarmguard.R
 import com.kondenko.alarmguard.preferences.Preferences
+import com.pawegio.kandroid.i
 
 /**
  * Sends a notification whenever alarm volume changes.
