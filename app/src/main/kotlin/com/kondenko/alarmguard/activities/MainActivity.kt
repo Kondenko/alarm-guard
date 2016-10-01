@@ -48,12 +48,18 @@ class MainActivity : AppCompatActivity(), PreferenceFragmentCompat.OnPreferenceS
         return true
     }
 
+    /**
+     * Make the app to check for any volume changes in the background
+     */
     private fun enableApp(enable: Boolean) {
         Preferences.appEnabled = enable
         if (enable) startService(service)
         else stopService(service)
     }
 
+    /**
+     * Show a CardView to onboard the user
+     */
     private fun setupCardView() {
         val card = layoutInflater.inflate(R.layout.layout_card, layout_main, false)
         val width = FrameLayout.LayoutParams.MATCH_PARENT
@@ -65,6 +71,10 @@ class MainActivity : AppCompatActivity(), PreferenceFragmentCompat.OnPreferenceS
         }
     }
 
+    /**
+     * Make any actions which occur only the first time the user
+     * runs the app
+     */
     private fun processFirstRun(action: () -> Unit) {
         if (Preferences.isFirstRun) {
             action()

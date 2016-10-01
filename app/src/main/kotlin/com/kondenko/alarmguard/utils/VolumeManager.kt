@@ -7,7 +7,7 @@ import com.kondenko.alarmguard.R
 import com.pawegio.kandroid.audioManager
 
 /**
- * Created by vladimir-kondenko on 21.09.16.
+ * Manages volume changes
  */
 object VolumeManager {
 

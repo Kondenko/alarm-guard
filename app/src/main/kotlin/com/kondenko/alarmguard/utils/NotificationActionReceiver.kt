@@ -10,6 +10,9 @@ import com.kondenko.alarmguard.preferences.Preferences
 import com.pawegio.kandroid.audioManager
 import com.pawegio.kandroid.i
 
+/**
+ * Manages app notification action(s)
+ */
 class NotificationActionReceiver : BroadcastReceiver() {
 
     override fun onReceive(context: Context?, intent: Intent?) {

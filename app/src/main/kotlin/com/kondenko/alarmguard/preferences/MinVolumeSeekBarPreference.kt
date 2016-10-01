@@ -15,6 +15,9 @@ import com.pawegio.kandroid.audioManager
 import com.pawegio.kandroid.onProgressChanged
 import java.io.IOException
 
+/**
+ * A SeekBar which selects the default alarm volume
+ */
 class MinVolumeSeekBarPreference(context: Context, attrs: AttributeSet) : Preference(context, attrs) {
 
     private val VOLUME_SCALE_FACTOR = 0.14f

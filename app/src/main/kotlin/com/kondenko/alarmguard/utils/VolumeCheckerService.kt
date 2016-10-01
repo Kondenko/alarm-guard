@@ -4,6 +4,9 @@ import android.app.IntentService
 import android.content.Intent
 import android.os.Handler
 
+/**
+ * Runs a ContentObserver to check if alarm volume is lower than necessary
+ */
 class VolumeCheckerService() : IntentService("VolumeCheckerService") {
 
     private lateinit var volumeObserver: VolumeObserver
