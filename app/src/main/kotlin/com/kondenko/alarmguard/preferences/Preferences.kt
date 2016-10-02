@@ -16,6 +16,6 @@ object Preferences : KotprefModel() {
 
     var defaultVolume: Int by intPrefVar(default = Constants.DEFAULT_ALARM_VOLUME)
 
-    var increaseAutomatically: Boolean by booleanPrefVar(default = false, key = context.getString(R.string.pref_key_increase_volume))
+    var increaseAutomatically: Boolean by booleanPrefVar(default = false)
 
 }

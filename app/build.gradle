@@ -16,7 +16,7 @@ android {
         vectorDrawables.useSupportLibrary = true
     }
 
-     buildTypes {
+    buildTypes {
 
         debug {
             applicationIdSuffix ".debug"
@@ -33,9 +33,11 @@ android {
     productFlavors {
         dev21 {
             minSdkVersion 21
+            vectorDrawables.useSupportLibrary = true
         }
         prod {
             minSdkVersion 16
+            vectorDrawables.useSupportLibrary = true
         }
     }
 

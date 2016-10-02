@@ -21,8 +21,4 @@
     <string name="card_welcome_text">Just set the default volume so you can hear it clearly.</string>
     <string name="card_welcome_action_dismiss">OK</string>
 
-
-    <!--Preferences keys-->
-    <string name="pref_key_increase_volume">increaseAutomatically</string>
-
 </resources>

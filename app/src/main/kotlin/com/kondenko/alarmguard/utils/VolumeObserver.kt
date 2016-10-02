@@ -1,20 +1,20 @@
 package com.kondenko.alarmguard.utils
 
-import android.app.Activity
 import android.app.Notification
 import android.app.PendingIntent
 import android.content.Context
 import android.content.Intent
 import android.database.ContentObserver
 import android.media.AudioManager
+import android.os.Build
 import android.os.Handler
 import android.support.v4.app.NotificationCompat
 import android.support.v4.app.NotificationManagerCompat
-import android.widget.Toast
 import com.kondenko.alarmguard.Constants
 import com.kondenko.alarmguard.R
 import com.kondenko.alarmguard.preferences.Preferences
 import com.pawegio.kandroid.i
+import com.pawegio.kandroid.toApi
 
 /**
  * Sends a notification whenever alarm volume changes.
@@ -52,7 +52,9 @@ class VolumeObserver(val context: Context, handler: Handler?) : ContentObserver(
                 PendingIntent.FLAG_UPDATE_CURRENT or Notification.FLAG_AUTO_CANCEL
         )
 
-        val action = NotificationCompat.Action(R.drawable.ic_volume_up_black_24dp,
+        val isLollipop = android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.LOLLIPOP
+        val icon = if (isLollipop) R.drawable.ic_volume_up_black_24dp else R.drawable.ic_volume_up_white_24dp
+        val action = NotificationCompat.Action(icon,
                 context.getString(R.string.notif_action_increase_volume),
                 actionPendingIntent)
 
