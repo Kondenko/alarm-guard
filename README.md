@@ -7,7 +7,7 @@
 This app makes sure your phone's alarm volume is not too low. If it is, AlarmGuard will send you a notification or raise it for you. 
 AlarmGuard doesn't want you to oversleep for your classes or your job, so install it and wake up right in time every day.
 
-<img src="https://psv4.vk.me/c812528/u95623017/docs/fc898cef8f49/Screenshot_20161004-204547.png?extra=emrz0as7KtS1DAONSW_O9fp0bFF5rqT8jcltSDd83fFpDf_643PlHXS_eGJwffP60Ud9FuTq3uoGrvfg5kjs_JLwN3uA8a3_nUWfwFh3vf-_RgxbV3g2AYc" alt="App settings" width="240" height="427"> <img src="https://psv4.vk.me/c812223/u95623017/docs/764872e9dfb2/Screenshot_20161004-204600.png?extra=ISNwaaxAP5gt7i5XA31mbFEhn4CxRyVPenGO8hdKxW8t_G4zkeinoP8AGwDokidwgEJ5619pPk5IP9_tMjcmZOJDMpP2GejswmarrkAqA-9wh9ruw8B1f5A" alt="App notification" width="240" height="427">
+<img src="https://lh6.googleusercontent.com/q7gfIr1u-7fhBQTylOr--tN2iH-0Qahkt11y3GlKWy-2IcBcSVIdPYVkJr8aoFExKv-q6v1iY-o2fe4=w1280-h894-rw" alt="App settings" width="240" height="427"> <img src="https://lh6.googleusercontent.com/78AFCwFzXHn5jNdX4ns3TjO2MSEqUhn_xEU7zmZHFW4jfepiVB-0UroMKHY6tM47nYiVMn_gkVZ-2Uo=w1280-h894-rw" alt="App notification" width="240" height="427">
 
 [Get apk](https://drive.google.com/open?id=0B6T71HBrEWpANEhnSTNDcTZKWDg)
 
